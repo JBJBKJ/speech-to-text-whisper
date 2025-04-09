@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import whisper
 
 app = Flask(__name__)
-model = whisper.load_model("small")  # Используем модель base, можно выбрать другую
+model = whisper.load_model("tiny")  # Используем модель base, можно выбрать другую
 
 @app.route("/transcribe", methods=["POST"])
 def transcribe():
